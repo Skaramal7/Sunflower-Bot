@@ -7,7 +7,8 @@ const descriptions = {
     ";ping": "*Answer with the server Ping.*",
     ";climao": "*Sends 'Torta de Climão' GIF.*",
     ";invite": "*Sends the Bot Invite Link.*",
-    ";pfp": "*Show's your profile picture.*"
+    ";pfp [mention]": "*Show's yours or mentioned user profile picture.*",
+    ";credits": "*Displays the bot creator social media*"
 };
 
 module.exports = async (client,msg) =>{

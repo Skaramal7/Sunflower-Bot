@@ -7,7 +7,7 @@ const descriptions = {
     ";ping": "*Answer with the server Ping.*",
     ";climao": "*Sends 'Torta de Climão' GIF.*",
     ";invite": "*Sends the Bot Invite Link.*",
-    ";pfp [mention]": "*Show's yours or mentioned user profile picture.*",
+    ";pfp": "*Show's yours or mentioned user profile picture.*",
     ";credits": "*Displays the bot creator social media*"
 };
 

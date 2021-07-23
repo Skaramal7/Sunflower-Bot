@@ -10,7 +10,7 @@ const commands = require("./scripts/commandsReader")(prefix);
 const unknowCommand = require("./scripts/unknowCommands");
 
 client.on("ready", ()=>{
-    console.log(`Discord Bot ${client.user.tag} Logged.`);
+    console.log(`Sucefully logged as '${client.user.tag}'.`);
     client.user.setActivity('Testing New Commands', { type: "PLAYING" }).catch(console.error);
 });
 

@@ -7,8 +7,11 @@ const descriptions = {
     ";ping": "*Answer with the server Ping.*",
     ";climao": "*Sends 'Torta de Climão' GIF.*",
     ";invite": "*Sends the Bot Invite Link.*",
-    ";pfp [mention]": "*Show's yours or mentioned user profile picture.*",
-    ";credits": "*Displays the bot creator social media*"
+    ";pfp": "*Shows yours or mentioned user profile picture.*",
+    ";credits": "*Displays the bot creator social media.*",
+    ";boom": "*A very explosive command.",
+    ";search": "*Coming soon!*",
+    ";spoil": "*Bot creator's paypal donate link. Help me if you want ;)*"
 };
 
 module.exports = async (client,msg) =>{

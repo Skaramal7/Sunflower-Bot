@@ -8,3 +8,6 @@ module.exports = async (client,msg) =>{
     msg.channel.send("");
     }
 */
+module.exports = async (client,msg) =>{
+    msg.channel.send("*Command in development or out of reach.*");
+    }

@@ -4,6 +4,7 @@ require("dotenv").config();
 require('discord-buttons')(client);
 const prefix = process.env.PREFIX
 const token = process.env.TOKEN
+const keepAlive = require('./server.js');
 
 const commands = require("./scripts/commandsReader")(prefix);
 
@@ -21,5 +22,7 @@ if(!msg.author.bot && msg.guild){
     else if(args[0].split("")[0] == prefix) unknowCommand(client,msg);
 }
 });
+
+keepAlive();
 
 client.login(token);

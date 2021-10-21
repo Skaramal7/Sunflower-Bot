@@ -18,7 +18,7 @@ client.on("message", (msg)=>{
 if(!msg.author.bot && msg.guild){
     const args = msg.content.split(" ");
     if(commands[args[0]]) commands[args[0]](client,msg);
-    else if(args[0].split("")[0] == token) unknowCommand(client,msg);
+    else if(args[0].split("")[0] == prefix) unknowCommand(client,msg);
 }
 });
 

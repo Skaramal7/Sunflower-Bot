@@ -1,18 +1,17 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 require("dotenv").config();
-require('discord-buttons')(client);
+require("discord-buttons")(client);
 const prefix = process.env.PREFIX
 const token = process.env.TOKEN
-const keepAlive = require('./server.js');
+const keepAlive = require("./host.js");
 
 const commands = require("./scripts/commandsReader")(prefix);
-
 const unknowCommand = require("./scripts/unknowCommands");
 
 client.on("ready", ()=>{
     console.log(`Sucefully logged as '${client.user.tag}'.`);
-    client.user.setActivity('Testing New Commands', { type: "PLAYING" }).catch(console.error);
+    client.user.setActivity('Testing New Commands', { type: "PLAYING" });
 });
 
 client.on("message", (msg)=>{

@@ -11,7 +11,7 @@ const unknowCommand = require("./scripts/unknowCommands");
 
 client.on("ready", ()=>{
     console.log(`Sucefully logged as '${client.user.tag}'.`);
-    client.user.setActivity('Testing New Commands', { type: "PLAYING" });
+    client.user.setActivity('the end of the world.', { type: "WATCHING" });
 });
 
 client.on("message", (msg)=>{
